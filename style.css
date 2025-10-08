@@ -1,16 +1,16 @@
 /* ================================== 
-   CSS COMPLET POUR PAGE DÉTAILS CLIENT
+   CSS ULTRA FORCÉ
    ================================== */
 
-/* Container principal avec padding et centrage */
-#main-container {
+/* Container principal */
+div.main-container {
   max-width: 1200px !important;
   margin: 0 auto !important;
   padding: 140px 20px 100px 20px !important;
 }
 
 /* Card des infos client */
-#client-info-card {
+div.client-info-card {
   background: white !important;
   border-radius: 12px !important;
   padding: 24px !important;
@@ -19,7 +19,8 @@
 }
 
 /* Titres de section */
-.section-title {
+div.section-title,
+div.section-title div {
   color: #212529 !important;
   font-size: 22px !important;
   font-weight: 700 !important;
@@ -30,7 +31,7 @@
 }
 
 /* Chaque ligne de détail */
-.detail-row {
+div.detail-row {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
@@ -38,12 +39,13 @@
   border-bottom: 1px solid #f1f3f5 !important;
 }
 
-.detail-row:last-child {
+div.detail-row:last-child {
   border-bottom: none !important;
 }
 
-/* Labels (Nom:, Email:, etc.) */
-.detail-label {
+/* Labels (Nom:, Email:, etc.) - FORCE LE DIV À L'INTÉRIEUR */
+div.detail-label,
+div.detail-label div {
   color: #6c757d !important;
   font-size: 14px !important;
   font-weight: 600 !important;
@@ -52,8 +54,9 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* Valeurs */
-.detail-value {
+/* Valeurs - FORCE LE DIV À L'INTÉRIEUR */
+div.detail-value,
+div.detail-value div {
   color: #212529 !important;
   font-size: 16px !important;
   font-weight: 500 !important;
@@ -62,20 +65,20 @@
 }
 
 /* Section produits */
-#products-section {
+div.products-section {
   background: white !important;
   border-radius: 12px !important;
   padding: 24px !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
 }
 
-/* Liste des produits (Repeating Group) */
-#products-list {
+/* Liste des produits */
+div.products-list {
   gap: 12px !important;
 }
 
-/* Chaque card produit dans le RG */
-.product-card {
+/* Chaque card produit */
+div.product-card {
   background: #f8f9fa !important;
   border: 1px solid #e9ecef !important;
   border-radius: 8px !important;
@@ -83,14 +86,15 @@
   transition: all 0.2s ease !important;
 }
 
-.product-card:hover {
+div.product-card:hover {
   background: white !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
   transform: translateY(-2px) !important;
 }
 
 /* Nom du produit */
-.product-name {
+div.product-name,
+div.product-name div {
   color: #212529 !important;
   font-size: 16px !important;
   font-weight: 600 !important;
@@ -99,7 +103,8 @@
 }
 
 /* Prix */
-.product-price {
+div.product-price,
+div.product-price div {
   color: #667eea !important;
   font-size: 18px !important;
   font-weight: 700 !important;
@@ -107,7 +112,8 @@
 }
 
 /* Quantité */
-.product-quantity {
+div.product-quantity,
+div.product-quantity div {
   color: #6c757d !important;
   font-size: 14px !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
