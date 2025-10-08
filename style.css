@@ -1,3 +1,47 @@
 body {
   background: red !important;
 }
+
+/* Reset complet du bouton Bubble */
+#btn-primary-custom,
+#btn-primary-custom button {
+  /* Couleurs Bootstrap Primary */
+  background-color: #0d6efd !important;
+  background-image: none !important;
+  border: 1px solid #0d6efd !important;
+  color: white !important;
+  
+  /* Typographie */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  
+  /* Spacing */
+  padding: 8px 16px !important;
+  
+  /* Shape */
+  border-radius: 6px !important;
+  
+  /* Effects */
+  box-shadow: none !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+/* Hover */
+#btn-primary-custom:hover,
+#btn-primary-custom button:hover {
+  background-color: #0b5ed7 !important;
+  border-color: #0a58ca !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3) !important;
+}
+
+/* Active (quand cliqué) */
+#btn-primary-custom:active,
+#btn-primary-custom button:active {
+  background-color: #0a58ca !important;
+  border-color: #0a53be !important;
+  transform: translateY(0) !important;
+}
