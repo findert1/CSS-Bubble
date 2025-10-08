@@ -830,3 +830,68 @@ div.checkbox-container {
   background: white !important;
   border-radius: 12px !important;
 }
+
+/*
+   SECTION COORDONNÉES
+*/
+
+/* Groupe principal Coordonnées */
+div.coordinates-section {
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 24px !important;
+  margin-bottom: 24px !important;
+}
+
+/* Titre "Coordonnées" */
+div.section-subtitle,
+div.section-subtitle div {
+  color: #212529 !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  margin-bottom: 24px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid #e9ecef !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Chaque groupe de champ (name Group, adresse group, postal group) */
+div.form-field-group {
+  margin-bottom: 20px !important;
+}
+
+/* Labels des champs (Text name, Text adresse, etc.) */
+div.form-label,
+div.form-label div {
+  color: #495057 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Les inputs */
+div.form-field-group input,
+div.form-field-group .bubble-element.Input input {
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 2px solid #e9ecef !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  transition: all 0.3s ease !important;
+  background: #f8f9fa !important;
+}
+
+div.form-field-group input:focus,
+div.form-field-group .bubble-element.Input input:focus {
+  border-color: #667eea !important;
+  outline: none !important;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1) !important;
+  background: white !important;
+  transform: translateY(-2px) !important;
+}
+
+div.form-field-group input::placeholder {
+  color: #adb5bd !important;
+}
