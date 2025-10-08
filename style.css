@@ -45,3 +45,79 @@ body {
   border-color: #0a53be !important;
   transform: translateY(0) !important;
 }
+
+
+/* Container principal pour tous les détails */
+#detail-container {
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 24px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  margin-bottom: 16px !important;
+}
+
+/* Labels (Nom:, Email:, etc.) */
+.detail-label {
+  color: #6c757d !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 4px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Valeurs (les vraies infos du client) */
+.detail-value {
+  color: #212529 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  line-height: 1.5 !important;
+}
+
+/* Section avec icône */
+.detail-section {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 12px !important;
+  padding: 16px !important;
+  background: #f8f9fa !important;
+  border-radius: 8px !important;
+  margin-bottom: 12px !important;
+  border-left: 4px solid #667eea !important;
+}
+
+/* Card pour regrouper plusieurs infos */
+.info-card {
+  background: white !important;
+  border: 1px solid #e9ecef !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  margin-bottom: 16px !important;
+  transition: all 0.3s ease !important;
+}
+
+.info-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Titre de section */
+.section-title {
+  color: #212529 !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  margin-bottom: 16px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 2px solid #e9ecef !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Grid layout pour plusieurs détails côte à côte */
+.details-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  gap: 20px !important;
+  margin-top: 20px !important;
+}
