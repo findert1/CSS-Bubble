@@ -252,3 +252,28 @@ div.btn-zoom button:hover {
   transform: translateY(-1px) !important;
   box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3) !important;
 }
+
+/* Bouton créer client */
+div.btn-create-client button,
+div.btn-create-client .bubble-element.Button {
+  background: #667eea !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3) !important;
+}
+
+div.btn-create-client button:hover {
+  background: #5568d3 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
+}
+
+div.btn-create-client button:active {
+  transform: translateY(0) !important;
+}
