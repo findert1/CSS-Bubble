@@ -1,8 +1,6 @@
 /* ================================== 
-   CSS COMPLET BUBBLE APP
+   CSS page client - style.css
    ================================== */
-
-/* ============ PAGE CLIENT - DÉTAILS ============ */
 
 /* Container principal */
 div.main-container {
@@ -45,7 +43,7 @@ div.detail-row:last-child {
   border-bottom: none !important;
 }
 
-/* Labels (Nom:, Email:, etc.) */
+/* Labels (Nom:, Email:, etc.) - FORCE LE DIV À L'INTÉRIEUR */
 div.detail-label,
 div.detail-label div {
   color: #6c757d !important;
@@ -56,7 +54,7 @@ div.detail-label div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* Valeurs */
+/* Valeurs - FORCE LE DIV À L'INTÉRIEUR */
 div.detail-value,
 div.detail-value div {
   color: #212529 !important;
@@ -74,10 +72,12 @@ div.products-section {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
 }
 
+/* Liste des produits */
 div.products-list {
   gap: 12px !important;
 }
 
+/* Chaque card produit */
 div.product-card {
   background: #f8f9fa !important;
   border: 1px solid #e9ecef !important;
@@ -92,6 +92,7 @@ div.product-card:hover {
   transform: translateY(-2px) !important;
 }
 
+/* Nom du produit */
 div.product-name,
 div.product-name div {
   color: #212529 !important;
@@ -101,6 +102,7 @@ div.product-name div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+/* Prix */
 div.product-price,
 div.product-price div {
   color: #667eea !important;
@@ -109,6 +111,7 @@ div.product-price div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+/* Quantité */
 div.product-quantity,
 div.product-quantity div {
   color: #6c757d !important;
@@ -116,8 +119,13 @@ div.product-quantity div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* ============ REPEATING GROUP CUSTOMERS ============ */
 
+
+/* ================================== 
+   REPEATING GROUP CUSTOMERS
+   ================================== */
+
+/* Le Repeating Group lui-même */
 div.customer-list {
   display: flex !important;
   flex-direction: column !important;
@@ -125,6 +133,7 @@ div.customer-list {
   padding: 20px !important;
 }
 
+/* Chaque card client (Canva client) */
 div.customer-card {
   background: white !important;
   border: 1px solid #e9ecef !important;
@@ -143,6 +152,7 @@ div.customer-card:hover {
   border-color: #667eea !important;
 }
 
+/* Section nom du client */
 div.customer-name-section {
   display: flex !important;
   flex-direction: column !important;
@@ -151,6 +161,7 @@ div.customer-name-section {
   border-bottom: 1px solid #f1f3f5 !important;
 }
 
+/* Label "Nom du client :" */
 div.customer-label,
 div.customer-label div {
   color: #6c757d !important;
@@ -161,6 +172,7 @@ div.customer-label div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+/* Valeur du nom */
 div.customer-name,
 div.customer-name div {
   color: #212529 !important;
@@ -169,12 +181,14 @@ div.customer-name div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+/* Section téléphone */
 div.customer-phone-section {
   display: flex !important;
   align-items: center !important;
   gap: 12px !important;
 }
 
+/* Numéro de téléphone */
 div.customer-phone,
 div.customer-phone div {
   color: #495057 !important;
@@ -184,17 +198,20 @@ div.customer-phone div {
   flex: 1 !important;
 }
 
+/* Groupe des boutons d'action */
 div.customer-actions {
   display: flex !important;
   gap: 12px !important;
   margin-top: 8px !important;
 }
 
+/* Boutons d'action */
 div.btn-call,
 div.btn-zoom {
   flex: 1 !important;
 }
 
+/* Style des boutons - Appeler */
 div.btn-call button,
 div.btn-call .bubble-element.Button {
   background: #198754 !important;
@@ -215,6 +232,7 @@ div.btn-call button:hover {
   box-shadow: 0 4px 8px rgba(25, 135, 84, 0.3) !important;
 }
 
+/* Style des boutons - Zoom */
 div.btn-zoom button,
 div.btn-zoom .bubble-element.Button {
   background: #0d6efd !important;
@@ -235,6 +253,7 @@ div.btn-zoom button:hover {
   box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3) !important;
 }
 
+/* Bouton créer client */
 div.btn-create-client button,
 div.btn-create-client .bubble-element.Button {
   background: #667eea !important;
@@ -255,8 +274,16 @@ div.btn-create-client button:hover {
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
 }
 
-/* ============ FORMULAIRE CLIENT ============ */
+div.btn-create-client button:active {
+  transform: translateY(0) !important;
+}
 
+
+/* ================================== 
+   FORMULAIRE CLIENT
+   ================================== */
+
+/* Groupe du formulaire */
 div.form-client {
   background: white !important;
   border-radius: 12px !important;
@@ -266,6 +293,7 @@ div.form-client {
   margin: 0 auto !important;
 }
 
+/* Titre du formulaire */
 div.form-title,
 div.form-title div {
   color: #212529 !important;
@@ -276,6 +304,7 @@ div.form-title div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+/* Tous les inputs du formulaire */
 div.form-input input,
 div.form-input textarea {
   width: 100% !important;
@@ -295,11 +324,18 @@ div.form-input textarea:focus {
   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
 }
 
+div.form-input input::placeholder,
+div.form-input textarea::placeholder {
+  color: #adb5bd !important;
+}
+
+/* Textarea pour les notes */
 div.form-input textarea {
   min-height: 100px !important;
   resize: vertical !important;
 }
 
+/* Message d'erreur */
 div.form-error,
 div.form-error div {
   color: #dc3545 !important;
@@ -314,12 +350,14 @@ div.form-error div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+/* Groupe des boutons */
 div.form-actions {
   display: flex !important;
   gap: 12px !important;
   margin-top: 24px !important;
 }
 
+/* Bouton "Enregistrer le client" */
 div.btn-save-client button,
 div.btn-save-client .bubble-element.Button {
   background: #198754 !important;
@@ -341,6 +379,7 @@ div.btn-save-client button:hover {
   box-shadow: 0 4px 12px rgba(25, 135, 84, 0.4) !important;
 }
 
+/* Bouton "Enregistrer et créer le chantier" */
 div.btn-save-and-create button,
 div.btn-save-and-create .bubble-element.Button {
   background: #667eea !important;
@@ -362,18 +401,17 @@ div.btn-save-and-create button:hover {
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
 }
 
-/* ============ FORMULAIRE CRÉATION CHANTIER ============ */
-
-div.chantier-form {
-  background: white !important;
-  border-radius: 16px !important;
-  padding: 40px !important;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
-  max-width: 700px !important;
-  margin: 0 auto !important;
+/* Active state pour les deux boutons */
+div.btn-save-client button:active,
+div.btn-save-and-create button:active {
+  transform: translateY(0) !important;
 }
 
-/* Progress Bar liquide */
+/* ================================== 
+   Création chantier - Progress Bar
+   ================================== */
+
+/* L'élément ProgressBar Bubble */
 div.progress-bar-liquid {
   height: 80px !important;
   background: #f8f9fa !important;
@@ -384,6 +422,7 @@ div.progress-bar-liquid {
   margin-bottom: 40px !important;
 }
 
+/* La barre de progression elle-même */
 div.progress-bar-liquid > div {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
   height: 100% !important;
@@ -392,6 +431,7 @@ div.progress-bar-liquid > div {
   position: relative !important;
 }
 
+/* Effet de vague sur la barre */
 div.progress-bar-liquid > div::before {
   content: '' !important;
   position: absolute !important;
@@ -409,6 +449,7 @@ div.progress-bar-liquid > div::before {
   animation: wave 3s linear infinite !important;
 }
 
+/* Effet de brillance animé */
 div.progress-bar-liquid > div::after {
   content: '' !important;
   position: absolute !important;
@@ -443,7 +484,23 @@ div.progress-bar-liquid > div::after {
   }
 }
 
-/* Titres de steps */
+/* 
+   CONTAINER FORMULAIRE
+ */
+
+div.chantier-form {
+  background: white !important;
+  border-radius: 16px !important;
+  padding: 40px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+  max-width: 700px !important;
+  margin: 0 auto !important;
+}
+
+/* 
+   TITRES DE SECTION
+ */
+
 div.step-title,
 div.step-title div {
   color: #212529 !important;
@@ -461,162 +518,57 @@ div.step-subtitle div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* Titres de sections de checkboxes */
-div.checkbox-section-title,
-div.checkbox-section-title div {
-  color: #212529 !important;
-  font-size: 22px !important;
-  font-weight: 700 !important;
-  margin-bottom: 20px !important;
-  margin-top: 32px !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-}
+/* 
+   CHECKBOXES ULTRA STYLÉES
+ */
 
-/* Titre principal inventaire */
-div.main-section-title,
-div.main-section-title div {
-  color: #212529 !important;
-  font-size: 28px !important;
-  font-weight: 700 !important;
-  margin-bottom: 32px !important;
-  text-align: center !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-}
-
-/* Radio Buttons */
-div.custom-radio {
-  display: flex !important;
-  flex-direction: column !important;
-  padding: 20px !important;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
-  border: 2px solid transparent !important;
-  border-radius: 12px !important;
-  margin-bottom: 16px !important;
-  cursor: pointer !important;
-  transition: all 0.3s ease !important;
-  position: relative !important;
-  overflow: hidden !important;
-}
-
-div.custom-radio::before {
-  content: '' !important;
-  position: absolute !important;
-  top: -50% !important;
-  left: -50% !important;
-  width: 200% !important;
-  height: 200% !important;
-  background: linear-gradient(
-    45deg,
-    transparent 30%,
-    rgba(102, 126, 234, 0.1) 50%,
-    transparent 70%
-  ) !important;
-  transform: rotate(45deg) !important;
-  transition: all 0.5s ease !important;
-  opacity: 0 !important;
-}
-
-div.custom-radio:hover::before {
-  opacity: 1 !important;
-}
-
-div.custom-radio:hover {
-  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%) !important;
-  border-color: #667eea !important;
-  transform: translateY(-4px) scale(1.02) !important;
-  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2) !important;
-}
-
-div.custom-radio:has(input[type="radio"]:checked) {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-  border-color: #667eea !important;
-  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4) !important;
-}
-
-div.custom-radio .bubble-element.Text,
-div.custom-radio .bubble-element.Text div {
-  color: #212529 !important;
-  font-size: 18px !important;
-  font-weight: 600 !important;
-  margin-bottom: 12px !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  z-index: 1 !important;
-  position: relative !important;
-}
-
-div.custom-radio:has(input[type="radio"]:checked) .bubble-element.Text,
-div.custom-radio:has(input[type="radio"]:checked) .bubble-element.Text div {
-  color: white !important;
-}
-
-div.custom-radio .bubble-element.RadioButtons input[type="radio"] {
-  transform: scale(1.3) !important;
-  cursor: pointer !important;
-  margin-right: 12px !important;
-  accent-color: #667eea !important;
-}
-
-/* Checkboxes - VERSION SPACIEUSE AMÉLIORÉE */
-div.checkbox-container {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 16px !important;
-  padding: 24px !important;
-  background: white !important;
-  border-radius: 12px !important;
-}
-
-div.custom-checkbox-item,
-.bubble-element.Checkbox.custom-checkbox-item {
-  padding: 18px 24px !important;
-  background: #f8f9fa !important;
-  border: 2px solid #e9ecef !important;
-  border-radius: 12px !important;
-  cursor: pointer !important;
-  transition: all 0.3s ease !important;
+div.custom-checkbox {
   display: flex !important;
   align-items: center !important;
-  min-height: 60px !important;
+  padding: 16px 20px !important;
+  background: #f8f9fa !important;
+  border: 2px solid transparent !important;
+  border-radius: 12px !important;
+  margin-bottom: 12px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
 }
 
-div.custom-checkbox-item:hover,
-.bubble-element.Checkbox.custom-checkbox-item:hover {
-  background: white !important;
+div.custom-checkbox:hover {
+  background: #e9ecef !important;
   border-color: #667eea !important;
   transform: translateX(8px) !important;
-  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.15) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15) !important;
 }
 
-div.custom-checkbox-item:has(input:checked),
-.bubble-element.Checkbox.custom-checkbox-item:has(input:checked) {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
-  border-color: #667eea !important;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2) !important;
-}
-
-div.custom-checkbox-item input[type="checkbox"],
-.bubble-element.Checkbox.custom-checkbox-item input[type="checkbox"] {
-  transform: scale(1.4) !important;
-  cursor: pointer !important;
-  accent-color: #667eea !important;
+/* La checkbox Bubble à l'intérieur */
+div.custom-checkbox input[type="checkbox"],
+div.custom-checkbox .bubble-element.Checkbox {
   margin-right: 16px !important;
+  transform: scale(1.3) !important;
+  cursor: pointer !important;
 }
 
-div.custom-checkbox-item label,
-div.custom-checkbox-item span,
-.bubble-element.Checkbox.custom-checkbox-item label {
+div.custom-checkbox label,
+div.custom-checkbox .bubble-element.Text,
+div.custom-checkbox .bubble-element.Text div {
   color: #212529 !important;
   font-size: 16px !important;
   font-weight: 500 !important;
-  line-height: 1.5 !important;
   cursor: pointer !important;
+  flex: 1 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* Inputs */
+/*
+   INPUTS DU FORMULAIRE
+*/
+
 div.step-input input,
 div.step-input textarea,
-div.step-input .bubble-element.Input input {
+div.step-input select,
+div.step-input .bubble-element.Input input,
+div.step-input .bubble-element.MultiLineInput textarea {
   width: 100% !important;
   padding: 14px 18px !important;
   border: 2px solid #e9ecef !important;
@@ -629,19 +581,27 @@ div.step-input .bubble-element.Input input {
 
 div.step-input input:focus,
 div.step-input textarea:focus,
-div.step-input .bubble-element.Input input:focus {
+div.step-input .bubble-element.Input input:focus,
+div.step-input .bubble-element.MultiLineInput textarea:focus {
   border-color: #667eea !important;
   outline: none !important;
   box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1) !important;
   transform: translateY(-2px) !important;
 }
 
-/* Boutons de navigation */
+/* 
+   GROUPE DE BOUTONS
+   */
+
 div.step-actions {
   display: flex !important;
   gap: 12px !important;
   margin-top: 32px !important;
 }
+
+/*
+   BOUTON PRÉCÉDENT
+    */
 
 div.btn-previous button,
 div.btn-previous .bubble-element.Button {
@@ -663,6 +623,10 @@ div.btn-previous button:hover {
   box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3) !important;
 }
 
+/*
+   BOUTON SUIVANT
+   */
+
 div.btn-next button,
 div.btn-next .bubble-element.Button {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
@@ -675,12 +639,18 @@ div.btn-next .bubble-element.Button {
   transition: all 0.3s ease !important;
   cursor: pointer !important;
   width: 100% !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 div.btn-next button:hover {
   transform: translateY(-2px) scale(1.02) !important;
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4) !important;
 }
+
+/*
+   BOUTON TERMINER
+*/
 
 div.btn-finish button,
 div.btn-finish .bubble-element.Button {
@@ -703,7 +673,8 @@ div.btn-finish button:hover {
   box-shadow: 0 6px 20px rgba(25, 135, 84, 0.4) !important;
 }
 
-/* Animations */
+/* ANIMATIONS D'ENTRÉE */
+
 div.step-group {
   animation: slideIn 0.5s ease !important;
 }
@@ -719,8 +690,152 @@ div.step-group {
   }
 }
 
-/* ============ SECTION COORDONNÉES ============ */
+/* 
+   RADIO BUTTONS 
+*/
 
+/* Container du radio (Group A, B, C) */
+div.custom-radio {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 20px !important;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+  border: 2px solid transparent !important;
+  border-radius: 12px !important;
+  margin-bottom: 16px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Effet de brillance au hover */
+div.custom-radio::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -50% !important;
+  width: 200% !important;
+  height: 200% !important;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(102, 126, 234, 0.1) 50%,
+    transparent 70%
+  ) !important;
+  transform: rotate(45deg) !important;
+  transition: all 0.5s ease !important;
+  opacity: 0 !important;
+}
+
+div.custom-radio:hover::before {
+  opacity: 1 !important;
+  animation: shine 1.5s ease-in-out infinite !important;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+div.custom-radio:hover {
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%) !important;
+  border-color: #667eea !important;
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.2) !important;
+}
+
+/* Quand le radio est sélectionné */
+div.custom-radio.selected,
+div.custom-radio:has(input[type="radio"]:checked) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-color: #667eea !important;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Le texte à l'intérieur du radio group */
+div.custom-radio .bubble-element.Text,
+div.custom-radio .bubble-element.Text div {
+  color: #212529 !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  z-index: 1 !important;
+  position: relative !important;
+}
+
+/* Texte quand sélectionné */
+div.custom-radio.selected .bubble-element.Text,
+div.custom-radio.selected .bubble-element.Text div,
+div.custom-radio:has(input[type="radio"]:checked) .bubble-element.Text,
+div.custom-radio:has(input[type="radio"]:checked) .bubble-element.Text div {
+  color: white !important;
+}
+
+/* Les RadioButtons Bubble à l'intérieur */
+div.custom-radio .bubble-element.RadioButtons {
+  z-index: 1 !important;
+  position: relative !important;
+}
+
+div.custom-radio .bubble-element.RadioButtons input[type="radio"] {
+  transform: scale(1.3) !important;
+  cursor: pointer !important;
+  margin-right: 12px !important;
+  accent-color: #667eea !important;
+}
+
+/*
+   CHECKBOXES (si pas dans des groups séparés)
+ */
+
+div.custom-checkbox-item {
+  display: flex !important;
+  align-items: center !important;
+  padding: 14px 18px !important;
+  background: #f8f9fa !important;
+  border: 2px solid transparent !important;
+  border-radius: 10px !important;
+  margin-bottom: 10px !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+div.custom-checkbox-item:hover {
+  background: #e9ecef !important;
+  border-color: #667eea !important;
+  transform: translateX(8px) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15) !important;
+}
+
+div.custom-checkbox-item input[type="checkbox"],
+div.custom-checkbox-item .bubble-element.Checkbox {
+  transform: scale(1.2) !important;
+  cursor: pointer !important;
+  accent-color: #667eea !important;
+}
+
+/* */
+
+div.checkbox-container {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  padding: 16px !important;
+  background: white !important;
+  border-radius: 12px !important;
+}
+
+/*
+   SECTION COORDONNÉES
+*/
+
+/* Groupe principal Coordonnées */
 div.coordinates-section {
   background: white !important;
   border-radius: 12px !important;
@@ -728,6 +843,7 @@ div.coordinates-section {
   margin-bottom: 24px !important;
 }
 
+/* Titre "Coordonnées" */
 div.section-subtitle,
 div.section-subtitle div {
   color: #212529 !important;
@@ -739,10 +855,12 @@ div.section-subtitle div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+/* Chaque groupe de champ (name Group, adresse group, postal group) */
 div.form-field-group {
   margin-bottom: 20px !important;
 }
 
+/* Labels des champs (Text name, Text adresse, etc.) */
 div.form-label,
 div.form-label div {
   color: #495057 !important;
@@ -752,6 +870,7 @@ div.form-label div {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
+/* Les inputs */
 div.form-field-group input,
 div.form-field-group .bubble-element.Input input {
   width: 100% !important;
@@ -771,4 +890,8 @@ div.form-field-group .bubble-element.Input input:focus {
   box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1) !important;
   background: white !important;
   transform: translateY(-2px) !important;
+}
+
+div.form-field-group input::placeholder {
+  color: #adb5bd !important;
 }
