@@ -48,76 +48,113 @@ body {
 
 
 /* ================================== Container principal pour tous les détails ============================== */
-#detail-container {
+/* Container principal avec padding et centrage */
+#main-container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 140px 20px 100px 20px !important; /* Top pour header, Bottom pour navbar */
+}
+
+/* Card des infos client */
+#client-info-card {
   background: white !important;
   border-radius: 12px !important;
   padding: 24px !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 32px !important;
 }
 
-/* Labels (Nom:, Email:, etc.) */
-.detail-label {
-  color: #6c757d !important;
-  font-size: 13px !important;
-  font-weight: 600 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.5px !important;
-  margin-bottom: 4px !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-}
-
-/* Valeurs (les vraies infos du client) */
-.detail-value {
+/* Titres de section */
+#section-title {
   color: #212529 !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  line-height: 1.5 !important;
-}
-
-/* Section avec icône */
-.detail-section {
-  display: flex !important;
-  align-items: flex-start !important;
-  gap: 12px !important;
-  padding: 16px !important;
-  background: #f8f9fa !important;
-  border-radius: 8px !important;
-  margin-bottom: 12px !important;
-  border-left: 4px solid #667eea !important;
-}
-
-/* Card pour regrouper plusieurs infos */
-.info-card {
-  background: white !important;
-  border: 1px solid #e9ecef !important;
-  border-radius: 12px !important;
-  padding: 20px !important;
-  margin-bottom: 16px !important;
-  transition: all 0.3s ease !important;
-}
-
-.info-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
-  transform: translateY(-2px) !important;
-}
-
-/* Titre de section */
-.section-title {
-  color: #212529 !important;
-  font-size: 18px !important;
+  font-size: 22px !important;
   font-weight: 700 !important;
-  margin-bottom: 16px !important;
+  margin-bottom: 20px !important;
   padding-bottom: 12px !important;
   border-bottom: 2px solid #e9ecef !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 
-/* Grid layout pour plusieurs détails côte à côte */
-.details-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
-  gap: 20px !important;
-  margin-top: 20px !important;
+/* Chaque ligne de détail */
+#detail-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 14px 0 !important;
+  border-bottom: 1px solid #f1f3f5 !important;
+}
+
+#detail-row:last-child {
+  border-bottom: none !important;
+}
+
+/* Labels (Nom:, Email:, etc.) */
+#detail-label {
+  color: #6c757d !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Valeurs */
+#detail-value {
+  color: #212529 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  text-align: right !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Section produits */
+#products-section {
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 24px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+}
+
+/* Liste des produits (Repeating Group) */
+#products-list {
+  gap: 12px !important;
+}
+
+/* Chaque card produit dans le RG */
+#product-card {
+  background: #f8f9fa !important;
+  border: 1px solid #e9ecef !important;
+  border-radius: 8px !important;
+  padding: 16px !important;
+  transition: all 0.2s ease !important;
+}
+
+#product-card:hover {
+  background: white !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Nom du produit */
+#product-name {
+  color: #212529 !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Prix */
+#product-price {
+  color: #667eea !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Quantité */
+#product-quantity {
+  color: #6c757d !important;
+  font-size: 14px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
