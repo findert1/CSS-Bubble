@@ -1,58 +1,12 @@
-body {
-  background: red !important;
-}
+/* ================================== 
+   CSS COMPLET POUR PAGE DÉTAILS CLIENT
+   ================================== */
 
-/* Reset complet du bouton Bubble */
-#btn-primary-custom,
-#btn-primary-custom button {
-  /* Couleurs Bootstrap Primary */
-  background-color: #0d6efd !important;
-  background-image: none !important;
-  border: 1px solid #0d6efd !important;
-  color: white !important;
-  
-  /* Typographie */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 500 !important;
-  line-height: 1.5 !important;
-  
-  /* Spacing */
-  padding: 8px 16px !important;
-  
-  /* Shape */
-  border-radius: 6px !important;
-  
-  /* Effects */
-  box-shadow: none !important;
-  cursor: pointer !important;
-  transition: all 0.15s ease-in-out !important;
-}
-
-/* Hover */
-#btn-primary-custom:hover,
-#btn-primary-custom button:hover {
-  background-color: #0b5ed7 !important;
-  border-color: #0a58ca !important;
-  transform: translateY(-1px) !important;
-  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3) !important;
-}
-
-/* Active (quand cliqué) */
-#btn-primary-custom:active,
-#btn-primary-custom button:active {
-  background-color: #0a58ca !important;
-  border-color: #0a53be !important;
-  transform: translateY(0) !important;
-}
-
-
-/* ================================== Container principal pour tous les détails ============================== */
 /* Container principal avec padding et centrage */
 #main-container {
   max-width: 1200px !important;
   margin: 0 auto !important;
-  padding: 140px 20px 100px 20px !important; /* Top pour header, Bottom pour navbar */
+  padding: 140px 20px 100px 20px !important;
 }
 
 /* Card des infos client */
@@ -65,7 +19,7 @@ body {
 }
 
 /* Titres de section */
-#section-title {
+.section-title {
   color: #212529 !important;
   font-size: 22px !important;
   font-weight: 700 !important;
@@ -76,7 +30,7 @@ body {
 }
 
 /* Chaque ligne de détail */
-#detail-row {
+.detail-row {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
@@ -84,12 +38,12 @@ body {
   border-bottom: 1px solid #f1f3f5 !important;
 }
 
-#detail-row:last-child {
+.detail-row:last-child {
   border-bottom: none !important;
 }
 
 /* Labels (Nom:, Email:, etc.) */
-#detail-label {
+.detail-label {
   color: #6c757d !important;
   font-size: 14px !important;
   font-weight: 600 !important;
@@ -99,7 +53,7 @@ body {
 }
 
 /* Valeurs */
-#detail-value {
+.detail-value {
   color: #212529 !important;
   font-size: 16px !important;
   font-weight: 500 !important;
@@ -121,7 +75,7 @@ body {
 }
 
 /* Chaque card produit dans le RG */
-#product-card {
+.product-card {
   background: #f8f9fa !important;
   border: 1px solid #e9ecef !important;
   border-radius: 8px !important;
@@ -129,14 +83,14 @@ body {
   transition: all 0.2s ease !important;
 }
 
-#product-card:hover {
+.product-card:hover {
   background: white !important;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
   transform: translateY(-2px) !important;
 }
 
 /* Nom du produit */
-#product-name {
+.product-name {
   color: #212529 !important;
   font-size: 16px !important;
   font-weight: 600 !important;
@@ -145,7 +99,7 @@ body {
 }
 
 /* Prix */
-#product-price {
+.product-price {
   color: #667eea !important;
   font-size: 18px !important;
   font-weight: 700 !important;
@@ -153,7 +107,7 @@ body {
 }
 
 /* Quantité */
-#product-quantity {
+.product-quantity {
   color: #6c757d !important;
   font-size: 14px !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
