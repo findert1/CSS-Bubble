@@ -1,5 +1,5 @@
 /* ================================== 
-   CSS ULTRA FORCÉ
+   CSS page client - style.css
    ================================== */
 
 /* Container principal */
@@ -117,4 +117,138 @@ div.product-quantity div {
   color: #6c757d !important;
   font-size: 14px !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+
+
+/* ================================== 
+   REPEATING GROUP CUSTOMERS
+   ================================== */
+
+/* Le Repeating Group lui-même */
+div.customer-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  padding: 20px !important;
+}
+
+/* Chaque card client (Canva client) */
+div.customer-card {
+  background: white !important;
+  border: 1px solid #e9ecef !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+}
+
+div.customer-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12) !important;
+  transform: translateY(-2px) !important;
+  border-color: #667eea !important;
+}
+
+/* Section nom du client */
+div.customer-name-section {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid #f1f3f5 !important;
+}
+
+/* Label "Nom du client :" */
+div.customer-label,
+div.customer-label div {
+  color: #6c757d !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Valeur du nom */
+div.customer-name,
+div.customer-name div {
+  color: #212529 !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Section téléphone */
+div.customer-phone-section {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+/* Numéro de téléphone */
+div.customer-phone,
+div.customer-phone div {
+  color: #495057 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  flex: 1 !important;
+}
+
+/* Groupe des boutons d'action */
+div.customer-actions {
+  display: flex !important;
+  gap: 12px !important;
+  margin-top: 8px !important;
+}
+
+/* Boutons d'action */
+div.btn-call,
+div.btn-zoom {
+  flex: 1 !important;
+}
+
+/* Style des boutons - Appeler */
+div.btn-call button,
+div.btn-call .bubble-element.Button {
+  background: #198754 !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease !important;
+  width: 100% !important;
+  cursor: pointer !important;
+}
+
+div.btn-call button:hover {
+  background: #157347 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(25, 135, 84, 0.3) !important;
+}
+
+/* Style des boutons - Zoom */
+div.btn-zoom button,
+div.btn-zoom .bubble-element.Button {
+  background: #0d6efd !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: all 0.2s ease !important;
+  width: 100% !important;
+  cursor: pointer !important;
+}
+
+div.btn-zoom button:hover {
+  background: #0b5ed7 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3) !important;
 }
