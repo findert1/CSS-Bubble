@@ -277,3 +277,132 @@ div.btn-create-client button:hover {
 div.btn-create-client button:active {
   transform: translateY(0) !important;
 }
+
+
+/* ================================== 
+   FORMULAIRE CLIENT
+   ================================== */
+
+/* Groupe du formulaire */
+div.form-client {
+  background: white !important;
+  border-radius: 12px !important;
+  padding: 32px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+}
+
+/* Titre du formulaire */
+div.form-title,
+div.form-title div {
+  color: #212529 !important;
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  margin-bottom: 32px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Tous les inputs du formulaire */
+div.form-input input,
+div.form-input textarea {
+  width: 100% !important;
+  padding: 12px 16px !important;
+  border: 2px solid #e9ecef !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 16px !important;
+}
+
+div.form-input input:focus,
+div.form-input textarea:focus {
+  border-color: #667eea !important;
+  outline: none !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+div.form-input input::placeholder,
+div.form-input textarea::placeholder {
+  color: #adb5bd !important;
+}
+
+/* Textarea pour les notes */
+div.form-input textarea {
+  min-height: 100px !important;
+  resize: vertical !important;
+}
+
+/* Message d'erreur */
+div.form-error,
+div.form-error div {
+  color: #dc3545 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  margin: 16px 0 !important;
+  padding: 12px !important;
+  background: #f8d7da !important;
+  border: 1px solid #f5c2c7 !important;
+  border-radius: 8px !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Groupe des boutons */
+div.form-actions {
+  display: flex !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+
+/* Bouton "Enregistrer le client" */
+div.btn-save-client button,
+div.btn-save-client .bubble-element.Button {
+  background: #198754 !important;
+  color: white !important;
+  border: none !important;
+  padding: 14px 24px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  flex: 1 !important;
+  box-shadow: 0 2px 8px rgba(25, 135, 84, 0.3) !important;
+}
+
+div.btn-save-client button:hover {
+  background: #157347 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.4) !important;
+}
+
+/* Bouton "Enregistrer et créer le chantier" */
+div.btn-save-and-create button,
+div.btn-save-and-create .bubble-element.Button {
+  background: #667eea !important;
+  color: white !important;
+  border: none !important;
+  padding: 14px 24px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  flex: 1 !important;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3) !important;
+}
+
+div.btn-save-and-create button:hover {
+  background: #5568d3 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Active state pour les deux boutons */
+div.btn-save-client button:active,
+div.btn-save-and-create button:active {
+  transform: translateY(0) !important;
+}
